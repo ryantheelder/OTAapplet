@@ -1,0 +1,29 @@
+logger:
+    file: /home/volte/repos/open5gs/install/var/log/open5gs/upf.log
+
+upf:
+    pfcp:
+      - addr: 127.0.0.7
+    gtpu:
+      - addr: 127.0.0.7
+    subnet:
+      - addr: 192.168.100.1/24
+        dev: ogstun
+        apn: internet
+      - addr: fd84:6aea:c36e:2b69::/48
+        dev: ogstun
+        apn: internet
+    metrics:
+      - addr: 127.0.0.7
+        port: 9090
+
+smf:
+
+
+parameter:
+
+
+max:
+
+
+time:

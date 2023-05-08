@@ -1,0 +1,18 @@
+logger:
+    file: /home/volte/repos/open5gs/install/var/log/open5gs/sgwu.log
+sgwu:
+    pfcp:
+      - addr: 127.0.0.6
+    gtpu:
+      - addr: 127.0.0.6
+
+
+sgwc:
+
+
+parameter:
+
+
+max:
+
+time:

@@ -1,0 +1,21 @@
+
+logger:
+    file: /home/volte/repos/open5gs/install/var/log/open5gs/sgwc.log
+
+
+sgwc:
+    gtpc:
+      - addr: 127.0.0.3
+    pfcp:
+      - addr: 127.0.0.3
+
+sgwu:
+    pfcp:
+      - addr: 127.0.0.6
+
+
+parameter:
+
+max:
+
+time:

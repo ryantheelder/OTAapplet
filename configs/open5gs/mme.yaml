@@ -1,0 +1,61 @@
+logger:
+    file: /home/volte/repos/open5gs/install/var/log/open5gs/mme.log
+
+
+mme:
+    freeDiameter: /home/volte/repos/open5gs/install/etc/freeDiameter/mme.conf
+    s1ap:
+      - addr: 127.0.0.2
+    gtpc:
+      - addr: 127.0.0.2
+    metrics:
+      - addr: 127.0.0.2
+        port: 9090
+    sgsap:
+      addr: 127.0.0.1
+      map:
+        tai:
+          plmn_id:
+            mcc: 001
+            mnc: 01
+          tac: 1
+        lai:
+          plmn_id:
+            mcc: 001
+            mnc: 01
+          lac: 1
+    gummei:
+      plmn_id:
+        mcc: 001
+        mnc: 01
+      mme_gid: 2
+      mme_code: 1
+    tai:
+      plmn_id:
+        mcc: 001
+        mnc: 01
+      tac: 1
+    security:
+        integrity_order : [ EIA2, EIA1, EIA0 ]
+        ciphering_order : [ EEA0, EEA1, EEA2 ]
+    network_name:
+        full: Open5GS
+    mme_name: open5gs-mme0
+
+sgwc:
+    gtpc:
+      - addr: 127.0.0.3
+
+smf:
+    gtpc:
+      - addr: 
+        - 127.0.0.4
+        - ::1
+
+
+parameter:
+
+usrsctp:
+
+
+time:

@@ -1,0 +1,12 @@
+db_uri: mongodb://localhost/open5gs
+logger:
+    file: /home/volte/repos/open5gs/install/var/log/open5gs/pcrf.log
+
+pcrf:
+    freeDiameter: /home/volte/repos/open5gs/install/etc/freeDiameter/pcrf.conf
+
+
+parameter:
+
+
+max:

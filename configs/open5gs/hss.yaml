@@ -1,0 +1,11 @@
+db_uri: mongodb://localhost/open5gs
+
+logger:
+    file: /home/volte/repos/open5gs/install/var/log/open5gs/hss.log
+
+hss:
+    freeDiameter: /home/volte/repos/open5gs/install/etc/freeDiameter/hss.conf
+
+parameter:
+
+max:
